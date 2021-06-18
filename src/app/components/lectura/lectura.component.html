@@ -1,0 +1,20 @@
+<!--Tablas de Libros dentro de la base de datos-->
+<div class="card" style="width: 60rem;">
+  <table class="table caption-top table-sm table-striped table-hover table-bordered">
+    <caption class="caption">Libros Existentes</caption>
+    <thead class="table-dark">
+      <tr class="titles">
+        <th>Nº Referencia</th>
+        <th>Titulo</th>
+        <th>Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let libro of libros">
+          <th>{{libro.n_referencia}}</th>
+          <th>{{libro.titulo}}</th>
+          <th>{{libro.descripcion}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>

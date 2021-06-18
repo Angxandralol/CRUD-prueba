@@ -1,0 +1,18 @@
+<!--Formulario para añadir un nuevo libro-->
+<div class="card" style="width: 40rem;">
+    <caption class="caption">Agregar</caption>
+    <div class="card-body">
+        <form #book_form="ngForm" (ngSubmit)="addBook(book_form)">
+            <label for="n_referencia">Numero de Referencia</label>
+            <input class="form-control" type="text" placeholder="Numero de Referencia" aria-label="default input example" name='n_referencia' #n_referencia="ngModel"[(ngModel)]='libro.n_referencia' required>
+            <label for="titulo">Titulo</label>
+            <input class="form-control" type="text" placeholder="Titulo" aria-label="default input example" name='titulo' #titulo="ngModel"[(ngModel)]='libro.titulo' required>
+            <label for="descripcion">Descripcion</label>
+            <input class="form-control" type="text" name="descripcion" placeholder="Descripcion" aria-label="default input example" name='descripcion' #descripcion="ngModel"[(ngModel)]='libro.descripcion'>
+            <!--Boton de Agregar-->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="submit">Agregar Libro</button>
+            </div>
+        </form>
+    </div>
+  </div>
