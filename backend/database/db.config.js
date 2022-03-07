@@ -8,7 +8,7 @@ const config = {
     user: 'postgres',
     host: 'localhost',
     database: 'libros',
-    password: '230301',
+    password: '',
     port: 5432,
 };
 
